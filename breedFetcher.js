@@ -5,7 +5,7 @@ const request = require('request');
 
 request(`https://api.thecatapi.com/v1/breeds/search?q=${arg[0]}`, (error, response, body) => {
   
-  if (response.statusCode !== 200) {
+  if (response.statusCode !== 200 && body === null) {
     console.log(error);
     return;
   }
