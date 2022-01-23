@@ -14,7 +14,7 @@ describe('fetchBreedDescription', () => {
       // compare returned description
       assert.equal(expectedDesc, desc.trim());
 
-      done();
+      
     });
   });
   
